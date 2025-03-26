@@ -1,0 +1,53 @@
+name: Test and Build Package
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install tree CLI
+        run: sudo apt-get update && sudo apt-get install -y tree
+
+      - name: Show directory structure before build
+        run: tree
+
+      - name: Setup Miniforge (Mambaforge)
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          installer-url: https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+          miniforge-variant: Mambaforge
+          use-mamba: true
+          auto-update-conda: true
+          environment-file: env.yml
+          activate-environment: mle-dev  # Automatically activates environment
+
+      - name: Install package in dev mode
+        run: pip install -e .
+
+      - name: Run unit tests
+        run: pytest -v tests/unit_tests/
+
+      - name: Fail workflow on test failure
+        if: failure()
+        run: exit 1  # Ensures workflow fails if tests fail
+
+      - name: Install build dependencies
+        run: pip install build
+
+
+      - name: Build the package
+        run: python -m build  # Builds the package
+
+      - name: Display directory tree after building
+        run: tree

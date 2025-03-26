@@ -1,0 +1,494 @@
+Script started on 2025-02-25 10:15:38+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h]0;lahir@TIGER06363: ~[01;32mlahir@TIGER06363[00m:[01;34m~[00m$ [7mwget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+[?2004l--2025-02-25 10:16:01--  https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+Resolving github.com (github.com)... 20.207.73.82
+Connecting to github.com (github.com)|20.207.73.82|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github.com/conda-forge/miniforge/releases/download/24.11.3-0/Miniforge3-Linux-x86_64.sh [following]
+--2025-02-25 10:16:02--  https://github.com/conda-forge/miniforge/releases/download/24.11.3-0/Miniforge3-Linux-x86_64.sh
+Reusing existing connection to github.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/221584272/e8e7946b-de63-45a9-82fc-f57b3bf07fcb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250225%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250225T044602Z&X-Amz-Expires=300&X-Amz-Signature=935b3e9df9faaed6a43677dbd9e3f59dc5762b8940893cc7b63b0a55271b839a&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DMiniforge3-Linux-x86_64.sh&response-content-type=application%2Foctet-stream [following]
+--2025-02-25 10:16:02--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/221584272/e8e7946b-de63-45a9-82fc-f57b3bf07fcb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250225%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250225T044602Z&X-Amz-Expires=300&X-Amz-Signature=935b3e9df9faaed6a43677dbd9e3f59dc5762b8940893cc7b63b0a55271b839a&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DMiniforge3-Linux-x86_64.sh&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 77993651 (74M) [application/octet-stream]
+Saving to: ‘Miniforge3-Linux-x86_64.sh’
+
+Miniforge3-Linux-x86_64.sh      0%[                                                  ]       0  --.-KB/s               Miniforge3-Linux-x86_64.sh      1%[                                                  ] 854.29K  4.03MB/s               Miniforge3-Linux-x86_64.sh      2%[>                                                 ]   1.87M  4.50MB/s               Miniforge3-Linux-x86_64.sh      3%[>                                                 ]   2.96M  4.81MB/s               Miniforge3-Linux-x86_64.sh      5%[=>                                                ]   3.91M  4.79MB/s               Miniforge3-Linux-x86_64.sh      6%[==>                                               ]   4.87M  4.78MB/s               Miniforge3-Linux-x86_64.sh      7%[==>                                               ]   5.79M  4.74MB/s               Miniforge3-Linux-x86_64.sh      9%[===>                                              ]   6.80M  4.78MB/s               Miniforge3-Linux-x86_64.sh     10%[====>                                             ]   7.82M  4.81MB/s               Miniforge3-Linux-x86_64.sh     12%[=====>                                            ]   8.96M  4.90MB/s               Miniforge3-Linux-x86_64.sh     13%[=====>                                            ]  10.01M  4.93MB/s               Miniforge3-Linux-x86_64.sh     14%[======>                                           ]  11.07M  4.96MB/s               Miniforge3-Linux-x86_64.sh     16%[=======>                                          ]  12.10M  4.97MB/s               Miniforge3-Linux-x86_64.sh     17%[=======>                                          ]  13.18M  5.00MB/s               Miniforge3-Linux-x86_64.sh     19%[========>                                         ]  14.35M  5.05MB/s               Miniforge3-Linux-x86_64.sh     20%[=========>                                        ]  15.54M  5.11MB/s    eta 12s    Miniforge3-Linux-x86_64.sh     22%[==========>                                       ]  16.66M  5.21MB/s    eta 12s    Miniforge3-Linux-x86_64.sh     23%[==========>                                       ]  17.68M  5.21MB/s    eta 12s    Miniforge3-Linux-x86_64.sh     24%[===========>                                      ]  18.58M  5.17MB/s    eta 12s    Miniforge3-Linux-x86_64.sh     26%[============>                                     ]  19.60M  5.16MB/s    eta 12s    Miniforge3-Linux-x86_64.sh     27%[============>                                     ]  20.63M  5.20MB/s    eta 11s    Miniforge3-Linux-x86_64.sh     29%[=============>                                    ]  21.68M  5.21MB/s    eta 11s    Miniforge3-Linux-x86_64.sh     30%[==============>                                   ]  22.71M  5.24MB/s    eta 11s    Miniforge3-Linux-x86_64.sh     30%[==============>                                   ]  22.96M  4.95MB/s    eta 11s    Miniforge3-Linux-x86_64.sh     34%[================>                                 ]  25.43M  5.38MB/s    eta 11s    Miniforge3-Linux-x86_64.sh     35%[================>                                 ]  26.61M  5.39MB/s    eta 9s     Miniforge3-Linux-x86_64.sh     37%[=================>                                ]  27.77M  5.43MB/s    eta 9s     Miniforge3-Linux-x86_64.sh     38%[==================>                               ]  28.93M  5.46MB/s    eta 9s     Miniforge3-Linux-x86_64.sh     40%[===================>                              ]  30.11M  5.50MB/s    eta 9s     Miniforge3-Linux-x86_64.sh     41%[===================>                              ]  31.11M  5.48MB/s    eta 9s     Miniforge3-Linux-x86_64.sh     43%[====================>                             ]  32.10M  5.41MB/s    eta 8s     Miniforge3-Linux-x86_64.sh     44%[=====================>                            ]  33.08M  5.35MB/s    eta 8s     Miniforge3-Linux-x86_64.sh     45%[=====================>                            ]  33.80M  4.93MB/s    eta 8s     Miniforge3-Linux-x86_64.sh     48%[=======================>                          ]  35.79M  5.23MB/s    eta 8s     Miniforge3-Linux-x86_64.sh     49%[=======================>                          ]  36.72M  5.24MB/s    eta 7s     Miniforge3-Linux-x86_64.sh     50%[========================>                         ]  37.61M  5.22MB/s    eta 7s     Miniforge3-Linux-x86_64.sh     51%[========================>                         ]  38.46M  5.13MB/s    eta 7s     Miniforge3-Linux-x86_64.sh     52%[=========================>                        ]  39.27M  5.03MB/s    eta 7s     Miniforge3-Linux-x86_64.sh     53%[=========================>                        ]  40.15M  4.99MB/s    eta 7s     Miniforge3-Linux-x86_64.sh     55%[==========================>                       ]  41.04M  4.79MB/s    eta 7s     Miniforge3-Linux-x86_64.sh     56%[===========================>                      ]  42.18M  4.81MB/s    eta 7s     Miniforge3-Linux-x86_64.sh     57%[===========================>                      ]  43.07M  4.74MB/s    eta 7s     Miniforge3-Linux-x86_64.sh     59%[============================>                     ]  44.10M  4.60MB/s    eta 7s     Miniforge3-Linux-x86_64.sh     60%[=============================>                    ]  45.05M  4.52MB/s    eta 7s     Miniforge3-Linux-x86_64.sh     62%[==============================>                   ]  46.16M  4.53MB/s    eta 6s     Miniforge3-Linux-x86_64.sh     63%[==============================>                   ]  46.95M  4.45MB/s    eta 6s     Miniforge3-Linux-x86_64.sh     64%[===============================>                  ]  47.91M  4.44MB/s    eta 6s     Miniforge3-Linux-x86_64.sh     65%[===============================>                  ]  48.76M  4.40MB/s    eta 6s     Miniforge3-Linux-x86_64.sh     66%[================================>                 ]  49.73M  4.72MB/s    eta 6s     Miniforge3-Linux-x86_64.sh     67%[================================>                 ]  50.57M  4.35MB/s    eta 5s     Miniforge3-Linux-x86_64.sh     69%[=================================>                ]  51.62M  4.39MB/s    eta 5s     Miniforge3-Linux-x86_64.sh     70%[==================================>               ]  52.68M  4.43MB/s    eta 5s     Miniforge3-Linux-x86_64.sh     72%[===================================>              ]  53.66M  4.46MB/s    eta 5s     Miniforge3-Linux-x86_64.sh     73%[===================================>              ]  54.60M  4.52MB/s    eta 5s     Miniforge3-Linux-x86_64.sh     75%[====================================>             ]  55.85M  4.63MB/s    eta 4s     Miniforge3-Linux-x86_64.sh     76%[=====================================>            ]  56.85M  4.67MB/s    eta 4s     Miniforge3-Linux-x86_64.sh     77%[=====================================>            ]  57.91M  4.67MB/s    eta 4s     Miniforge3-Linux-x86_64.sh     79%[======================================>           ]  58.91M  4.70MB/s    eta 4s     Miniforge3-Linux-x86_64.sh     80%[=======================================>          ]  59.80M  4.71MB/s    eta 4s     Miniforge3-Linux-x86_64.sh     81%[=======================================>          ]  60.45M  4.39MB/s    eta 3s     Miniforge3-Linux-x86_64.sh     83%[========================================>         ]  62.20M  4.57MB/s    eta 3s     Miniforge3-Linux-x86_64.sh     84%[=========================================>        ]  63.12M  4.61MB/s    eta 3s     Miniforge3-Linux-x86_64.sh     86%[==========================================>       ]  64.02M  4.55MB/s    eta 3s     Miniforge3-Linux-x86_64.sh     87%[==========================================>       ]  64.95M  4.64MB/s    eta 3s     Miniforge3-Linux-x86_64.sh     88%[===========================================>      ]  65.85M  4.64MB/s    eta 2s     Miniforge3-Linux-x86_64.sh     89%[===========================================>      ]  66.66M  4.59MB/s    eta 2s     Miniforge3-Linux-x86_64.sh     90%[============================================>     ]  67.46M  4.58MB/s    eta 2s     Miniforge3-Linux-x86_64.sh     91%[============================================>     ]  68.27M  4.51MB/s    eta 2s     Miniforge3-Linux-x86_64.sh     93%[=============================================>    ]  69.21M  4.47MB/s    eta 2s     Miniforge3-Linux-x86_64.sh     94%[==============================================>   ]  69.99M  4.45MB/s    eta 1s     Miniforge3-Linux-x86_64.sh     95%[==============================================>   ]  70.98M  4.38MB/s    eta 1s     Miniforge3-Linux-x86_64.sh     96%[===============================================>  ]  71.79M  4.32MB/s    eta 1s     Miniforge3-Linux-x86_64.sh     96%[===============================================>  ]  72.15M  3.81MB/s    eta 1s     Miniforge3-Linux-x86_64.sh     99%[================================================> ]  73.68M  3.98MB/s    eta 0s     Miniforge3-Linux-x86_64.sh     99%[================================================> ]  74.35M  3.94MB/s    eta 0s     Miniforge3-Linux-x86_64.sh    100%[=================================================>]  74.38M  3.94MB/s    in 16s     
+
+2025-02-25 10:16:19 (4.69 MB/s) - ‘Miniforge3-Linux-x86_64.sh’ saved [77993651/77993651]
+
+[?2004h]0;lahir@TIGER06363: ~[01;32mlahir@TIGER06363[00m:[01;34m~[00m$ [7mchmod +x Miniforge3-Linux-x86_64.sh[27m
+[7m./Miniforge3-Linux-x86_64.sh[27m[Achmod +x Miniforge3-Linux-x86_64.sh
+./Miniforge3-Linux-x86_64.sh
+[?2004l
+Welcome to Miniforge3 24.11.3-0
+
+In order to continue the installation process, please review the license
+agreement.
+Please, press ENTER to continue
+>>> 
+Miniforge installer code uses BSD-3-Clause license as stated below.
+
+Binary packages that come with it have their own licensing terms
+and by installing miniforge you agree to the licensing terms of individual
+packages as well. They include different OSI-approved licenses including
+the GNU General Public License and can be found in pkgs/<pkg-name>/info/licenses
+folders.
+
+Miniforge installer comes with a bootstrapping executable that is used
+when installing miniforge and is deleted after miniforge is installed.
+The bootstrapping executable uses micromamba, cli11, cpp-filesystem,
+curl, c-ares, krb5, libarchive, libev, lz4, nghttp2, openssl, libsolv,
+nlohmann-json, reproc and zstd which are licensed under BSD-3-Clause,
+MIT and OpenSSL licenses. Licenses and copyright notices of these
+projects can be found at the following URL.
+https://github.com/conda-forge/micromamba-feedstock/tree/master/recipe.
+
+=============================================================================
+
+Copyright (c) 2019-2022, conda-forge
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+[7m--More--[27mthis list of conditions and the following disclaimer in the documentation
+[7m--More--[27mand/or other materials provided with the distribution.
+[7m--More--[27m[K
+[7m--More--[27m3. Neither the name of the copyright holder nor the names of its contributors
+[7m--More--[27mmay be used to endorse or promote products derived from this software without
+[7m--More--[27mspecific prior written permission.
+[7m--More--[27m[K
+[7m--More--[27mTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+[7m--More--[27mANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+[7m--More--[27mWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+[7m--More--[27mDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+[7m--More--[27mFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+[7m--More--[27mDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+[7m--More--[27mSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+[7m--More--[27mCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+[7m--More--[27mOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+[7m--More--[27mOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+[7m--More--[27m[K
+
+Do you accept the license terms? [yes|no]
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> yes
+
+Miniforge3 will now be installed into this location:
+/home/lahir/miniforge3
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+[/home/lahir/miniforge3] >>> 
+PREFIX=/home/lahir/miniforge3
+Unpacking payload ...
+Extracting _libgcc_mutex-0.1-conda_forge.tar.bz2
+Extracting ca-certificates-2024.12.14-hbcca054_0.conda
+Extracting ld_impl_linux-64-2.43-h712a8e2_2.conda
+Extracting pybind11-abi-4-hd8ed1ab_3.tar.bz2
+Extracting python_abi-3.12-5_cp312.conda
+Extracting tzdata-2025a-h78e105d_0.conda
+Extracting libgomp-14.2.0-h77fa898_1.conda
+Extracting _openmp_mutex-4.5-2_gnu.tar.bz2
+Extracting libgcc-14.2.0-h77fa898_1.conda
+Extracting c-ares-1.34.4-hb9d3cd8_0.conda
+Extracting libexpat-2.6.4-h5888daf_0.conda
+Extracting libgcc-ng-14.2.0-h69a702a_1.conda
+Extracting liblzma-5.6.3-hb9d3cd8_1.conda
+Extracting libstdcxx-14.2.0-hc0a3c3a_1.conda
+Extracting libzlib-1.3.1-hb9d3cd8_2.conda
+Extracting ncurses-6.5-h2d0b736_2.conda
+Extracting openssl-3.4.0-h7b32b05_1.conda
+Extracting reproc-14.2.5.post0-hb9d3cd8_0.conda
+Extracting bzip2-1.0.8-h4bc722e_7.conda
+Extracting keyutils-1.6.1-h166bdaf_0.tar.bz2
+Extracting libedit-3.1.20240808-pl5321h7949ede_0.conda
+Extracting libev-4.33-hd590300_2.conda
+Extracting libffi-3.4.2-h7f98852_5.tar.bz2
+Extracting libiconv-1.17-hd590300_2.conda
+Extracting libnsl-2.0.1-hd590300_0.conda
+Extracting libsqlite-3.48.0-hee588c1_0.conda
+Extracting libssh2-1.11.1-hf672d98_0.conda
+Extracting libstdcxx-ng-14.2.0-h4852527_1.conda
+Extracting libuuid-2.38.1-h0b41bf4_0.conda
+Extracting libxcrypt-4.4.36-hd590300_1.conda
+Extracting lz4-c-1.10.0-h5888daf_1.conda
+Extracting lzo-2.10-hd590300_1001.conda
+Extracting readline-8.2-h8228510_1.conda
+Extracting reproc-cpp-14.2.5.post0-h5888daf_0.conda
+Extracting tk-8.6.13-noxft_h4845f30_101.conda
+Extracting fmt-11.0.2-h434a139_0.conda
+Extracting krb5-1.21.3-h659f571_0.conda
+Extracting libnghttp2-1.64.0-h161d5f1_0.conda
+Extracting libsolv-0.7.30-h3509ff9_0.conda
+Extracting libxml2-2.13.5-h0d44e9d_1.conda
+Extracting python-3.12.8-h9e4cc4f_1_cpython.conda
+Extracting yaml-cpp-0.8.0-h59595ed_0.conda
+Extracting zstd-1.5.6-ha6fb4c9_0.conda
+Extracting libarchive-3.7.7-h4585015_3.conda
+Extracting libcurl-8.11.1-h332b0f4_0.conda
+Extracting menuinst-2.2.0-py312h7900ff3_0.conda
+Extracting archspec-0.2.5-pyhd8ed1ab_0.conda
+Extracting boltons-24.0.0-pyhd8ed1ab_1.conda
+Extracting brotli-python-1.1.0-py312h2ec8cdc_2.conda
+Extracting certifi-2024.12.14-pyhd8ed1ab_0.conda
+Extracting charset-normalizer-3.4.1-pyhd8ed1ab_0.conda
+Extracting colorama-0.4.6-pyhd8ed1ab_1.conda
+Extracting distro-1.9.0-pyhd8ed1ab_1.conda
+Extracting frozendict-2.4.6-py312h66e93f0_0.conda
+Extracting hpack-4.0.0-pyhd8ed1ab_1.conda
+Extracting hyperframe-6.0.1-pyhd8ed1ab_1.conda
+Extracting idna-3.10-pyhd8ed1ab_1.conda
+Extracting jsonpointer-3.0.0-py312h7900ff3_1.conda
+Extracting libmamba-1.5.12-h49b8a8d_0.conda
+Extracting packaging-24.2-pyhd8ed1ab_2.conda
+Extracting platformdirs-4.3.6-pyhd8ed1ab_1.conda
+Extracting pluggy-1.5.0-pyhd8ed1ab_1.conda
+Extracting pycosat-0.6.6-py312h66e93f0_2.conda
+Extracting pycparser-2.22-pyh29332c3_1.conda
+Extracting pysocks-1.7.1-pyha55dd90_7.conda
+Extracting ruamel.yaml.clib-0.2.8-py312h66e93f0_1.conda
+Extracting setuptools-75.8.0-pyhff2d567_0.conda
+Extracting truststore-0.10.0-pyhd8ed1ab_0.conda
+Extracting wheel-0.45.1-pyhd8ed1ab_1.conda
+Extracting cffi-1.17.1-py312h06ac9bb_0.conda
+Extracting h2-4.1.0-pyhd8ed1ab_1.conda
+Extracting jsonpatch-1.33-pyhd8ed1ab_1.conda
+Extracting libmambapy-1.5.12-py312hbaee817_0.conda
+Extracting pip-24.3.1-pyh8b19718_2.conda
+Extracting ruamel.yaml-0.18.10-py312h66e93f0_0.conda
+Extracting tqdm-4.67.1-pyhd8ed1ab_1.conda
+Extracting zstandard-0.23.0-py312hef9b889_1.conda
+Extracting conda-package-streaming-0.11.0-pyhd8ed1ab_0.conda
+Extracting urllib3-2.3.0-pyhd8ed1ab_0.conda
+Extracting requests-2.32.3-pyhd8ed1ab_1.conda
+Extracting conda-package-handling-2.4.0-pyh7900ff3_2.conda
+Extracting conda-24.11.3-py312h7900ff3_0.conda
+Extracting conda-libmamba-solver-24.9.0-pyhd8ed1ab_0.conda
+Extracting mamba-1.5.12-py312h9460a1c_0.conda
+
+Installing base environment...
+
+Transaction
+
+  Prefix: /home/lahir/miniforge3
+
+  Updating specs:
+
+   - conda-forge/linux-64::_libgcc_mutex==0.1=conda_forge[md5=d7c89558ba9fa0495403155b64376d81]
+   - conda-forge/linux-64::ca-certificates==2024.12.14=hbcca054_0[md5=720523eb0d6a9b0f6120c16b2aa4e7de]
+   - conda-forge/linux-64::ld_impl_linux-64==2.43=h712a8e2_2[md5=048b02e3962f066da18efe3a21b77672]
+   - conda-forge/noarch::pybind11-abi==4=hd8ed1ab_3[md5=878f923dd6acc8aeb47a75da6c4098be]
+   - conda-forge/linux-64::python_abi==3.12=5_cp312[md5=0424ae29b104430108f5218a66db7260]
+   - conda-forge/noarch::tzdata==2025a=h78e105d_0[md5=dbcace4706afdfb7eb891f7b37d07c04]
+   - conda-forge/linux-64::libgomp==14.2.0=h77fa898_1[md5=cc3573974587f12dda90d96e3e55a702]
+   - conda-forge/linux-64::_openmp_mutex==4.5=2_gnu[md5=73aaf86a425cc6e73fcf236a5a46396d]
+   - conda-forge/linux-64::libgcc==14.2.0=h77fa898_1[md5=3cb76c3f10d3bc7f1105b2fc9db984df]
+   - conda-forge/linux-64::c-ares==1.34.4=hb9d3cd8_0[md5=e2775acf57efd5af15b8e3d1d74d72d3]
+   - conda-forge/linux-64::libexpat==2.6.4=h5888daf_0[md5=db833e03127376d461e1e13e76f09b6c]
+   - conda-forge/linux-64::libgcc-ng==14.2.0=h69a702a_1[md5=e39480b9ca41323497b05492a63bc35b]
+   - conda-forge/linux-64::liblzma==5.6.3=hb9d3cd8_1[md5=2ecf2f1c7e4e21fcfe6423a51a992d84]
+   - conda-forge/linux-64::libstdcxx==14.2.0=hc0a3c3a_1[md5=234a5554c53625688d51062645337328]
+   - conda-forge/linux-64::libzlib==1.3.1=hb9d3cd8_2[md5=edb0dca6bc32e4f4789199455a1dbeb8]
+   - conda-forge/linux-64::ncurses==6.5=h2d0b736_2[md5=04b34b9a40cdc48cfdab261ab176ff74]
+   - conda-forge/linux-64::openssl==3.4.0=h7b32b05_1[md5=4ce6875f75469b2757a65e10a5d05e31]
+   - conda-forge/linux-64::reproc==14.2.5.post0=hb9d3cd8_0[md5=69fbc0a9e42eb5fe6733d2d60d818822]
+   - conda-forge/linux-64::bzip2==1.0.8=h4bc722e_7[md5=62ee74e96c5ebb0af99386de58cf9553]
+   - conda-forge/linux-64::keyutils==1.6.1=h166bdaf_0[md5=30186d27e2c9fa62b45fb1476b7200e3]
+   - conda-forge/linux-64::libedit==3.1.20240808=pl5321h7949ede_0[md5=8247f80f3dc464d9322e85007e307fe8]
+   - conda-forge/linux-64::libev==4.33=hd590300_2[md5=172bf1cd1ff8629f2b1179945ed45055]
+   - conda-forge/linux-64::libffi==3.4.2=h7f98852_5[md5=d645c6d2ac96843a2bfaccd2d62b3ac3]
+   - conda-forge/linux-64::libiconv==1.17=hd590300_2[md5=d66573916ffcf376178462f1b61c941e]
+   - conda-forge/linux-64::libnsl==2.0.1=hd590300_0[md5=30fd6e37fe21f86f4bd26d6ee73eeec7]
+   - conda-forge/linux-64::libsqlite==3.48.0=hee588c1_0[md5=84bd1c9a82b455e7a2f390375fb38f90]
+   - conda-forge/linux-64::libssh2==1.11.1=hf672d98_0[md5=be2de152d8073ef1c01b7728475f2fe7]
+   - conda-forge/linux-64::libstdcxx-ng==14.2.0=h4852527_1[md5=8371ac6457591af2cf6159439c1fd051]
+   - conda-forge/linux-64::libuuid==2.38.1=h0b41bf4_0[md5=40b61aab5c7ba9ff276c41cfffe6b80b]
+   - conda-forge/linux-64::libxcrypt==4.4.36=hd590300_1[md5=5aa797f8787fe7a17d1b0821485b5adc]
+   - conda-forge/linux-64::lz4-c==1.10.0=h5888daf_1[md5=9de5350a85c4a20c685259b889aa6393]
+   - conda-forge/linux-64::lzo==2.10=hd590300_1001[md5=ec7398d21e2651e0dcb0044d03b9a339]
+   - conda-forge/linux-64::readline==8.2=h8228510_1[md5=47d31b792659ce70f470b5c82fdfb7a4]
+   - conda-forge/linux-64::reproc-cpp==14.2.5.post0=h5888daf_0[md5=828302fca535f9cfeb598d5f7c204323]
+   - conda-forge/linux-64::tk==8.6.13=noxft_h4845f30_101[md5=d453b98d9c83e71da0741bb0ff4d76bc]
+   - conda-forge/linux-64::fmt==11.0.2=h434a139_0[md5=995f7e13598497691c1dc476d889bc04]
+   - conda-forge/linux-64::krb5==1.21.3=h659f571_0[md5=3f43953b7d3fb3aaa1d0d0723d91e368]
+   - conda-forge/linux-64::libnghttp2==1.64.0=h161d5f1_0[md5=19e57602824042dfd0446292ef90488b]
+   - conda-forge/linux-64::libsolv==0.7.30=h3509ff9_0[md5=02539b77d25aa4f65b20246549e256c3]
+   - conda-forge/linux-64::libxml2==2.13.5=h0d44e9d_1[md5=f5b05674697ae7d2c5932766695945e1]
+   - conda-forge/linux-64::python==3.12.8=h9e4cc4f_1_cpython[md5=7fd2fd79436d9b473812f14e86746844]
+   - conda-forge/linux-64::yaml-cpp==0.8.0=h59595ed_0[md5=965eaacd7c18eb8361fd12bb9e7a57d7]
+   - conda-forge/linux-64::zstd==1.5.6=ha6fb4c9_0[md5=4d056880988120e29d75bfff282e0f45]
+   - conda-forge/linux-64::libarchive==3.7.7=h4585015_3[md5=a28808eae584c7f519943719b2a2b386]
+   - conda-forge/linux-64::libcurl==8.11.1=h332b0f4_0[md5=2b3e0081006dc21e8bf53a91c83a055c]
+   - conda-forge/linux-64::menuinst==2.2.0=py312h7900ff3_0[md5=f22f8e77b36e67297feffe03eefd5375]
+   - conda-forge/noarch::archspec==0.2.5=pyhd8ed1ab_0[md5=845b38297fca2f2d18a29748e2ece7fa]
+   - conda-forge/noarch::boltons==24.0.0=pyhd8ed1ab_1[md5=d88c38e66d85ecc9c7e2c4110676bbf4]
+   - conda-forge/linux-64::brotli-python==1.1.0=py312h2ec8cdc_2[md5=b0b867af6fc74b2a0aa206da29c0f3cf]
+   - conda-forge/noarch::certifi==2024.12.14=pyhd8ed1ab_0[md5=6feb87357ecd66733be3279f16a8c400]
+   - conda-forge/noarch::charset-normalizer==3.4.1=pyhd8ed1ab_0[md5=e83a31202d1c0a000fce3e9cf3825875]
+   - conda-forge/noarch::colorama==0.4.6=pyhd8ed1ab_1[md5=962b9857ee8e7018c22f2776ffa0b2d7]
+   - conda-forge/noarch::distro==1.9.0=pyhd8ed1ab_1[md5=0a2014fd9860f8b1eaa0b1f3d3771a08]
+   - conda-forge/linux-64::frozendict==2.4.6=py312h66e93f0_0[md5=9fa8408745a0621314b7751d11fecc18]
+   - conda-forge/noarch::hpack==4.0.0=pyhd8ed1ab_1[md5=2aa5ff7fa34a81b9196532c84c10d865]
+   - conda-forge/noarch::hyperframe==6.0.1=pyhd8ed1ab_1[md5=566e75c90c1d0c8c459eb0ad9833dc7a]
+   - conda-forge/noarch::idna==3.10=pyhd8ed1ab_1[md5=39a4f67be3286c86d696df570b1201b7]
+   - conda-forge/linux-64::jsonpointer==3.0.0=py312h7900ff3_1[md5=6b51f7459ea4073eeb5057207e2e1e3d]
+   - conda-forge/linux-64::libmamba==1.5.12=h49b8a8d_0[md5=d6aec145c4f2473c09c2699d74f6dfc0]
+   - conda-forge/noarch::packaging==24.2=pyhd8ed1ab_2[md5=3bfed7e6228ebf2f7b9eaa47f1b4e2aa]
+   - conda-forge/noarch::platformdirs==4.3.6=pyhd8ed1ab_1[md5=577852c7e53901ddccc7e6a9959ddebe]
+   - conda-forge/noarch::pluggy==1.5.0=pyhd8ed1ab_1[md5=e9dcbce5f45f9ee500e728ae58b605b6]
+   - conda-forge/linux-64::pycosat==0.6.6=py312h66e93f0_2[md5=08223e6a73e0bca5ade16ec4cebebf23]
+   - conda-forge/noarch::pycparser==2.22=pyh29332c3_1[md5=12c566707c80111f9799308d9e265aef]
+   - conda-forge/noarch::pysocks==1.7.1=pyha55dd90_7[md5=461219d1a5bd61342293efa2c0c90eac]
+   - conda-forge/linux-64::ruamel.yaml.clib==0.2.8=py312h66e93f0_1[md5=532c3e5d0280be4fea52396ec1fa7d5d]
+   - conda-forge/noarch::setuptools==75.8.0=pyhff2d567_0[md5=8f28e299c11afdd79e0ec1e279dcdc52]
+   - conda-forge/noarch::truststore==0.10.0=pyhd8ed1ab_0[md5=ad1c20cd193e3044bcf17798c33b9d67]
+   - conda-forge/noarch::wheel==0.45.1=pyhd8ed1ab_1[md5=75cb7132eb58d97896e173ef12ac9986]
+   - conda-forge/linux-64::cffi==1.17.1=py312h06ac9bb_0[md5=a861504bbea4161a9170b85d4d2be840]
+   - conda-forge/noarch::h2==4.1.0=pyhd8ed1ab_1[md5=825927dc7b0f287ef8d4d0011bb113b1]
+   - conda-forge/noarch::jsonpatch==1.33=pyhd8ed1ab_1[md5=cb60ae9cf02b9fcb8004dec4089e5691]
+   - conda-forge/linux-64::libmambapy==1.5.12=py312hbaee817_0[md5=88dd983e44c86cdde2817ecfa7d84d5a]
+   - conda-forge/noarch::pip==24.3.1=pyh8b19718_2[md5=04e691b9fadd93a8a9fad87a81d4fd8f]
+   - conda-forge/linux-64::ruamel.yaml==0.18.10=py312h66e93f0_0[md5=5260b7fb19694ee5bc4ed0ee7a2a769f]
+   - conda-forge/noarch::tqdm==4.67.1=pyhd8ed1ab_1[md5=9efbfdc37242619130ea42b1cc4ed861]
+   - conda-forge/linux-64::zstandard==0.23.0=py312hef9b889_1[md5=8b7069e9792ee4e5b4919a7a306d2e67]
+   - conda-forge/noarch::conda-package-streaming==0.11.0=pyhd8ed1ab_0[md5=bc9533d8616a97551ed144789bf9c1cd]
+   - conda-forge/noarch::urllib3==2.3.0=pyhd8ed1ab_0[md5=32674f8dbfb7b26410ed580dd3c10a29]
+   - conda-forge/noarch::requests==2.32.3=pyhd8ed1ab_1[md5=a9b9368f3701a417eac9edbcae7cb737]
+   - conda-forge/noarch::conda-package-handling==2.4.0=pyh7900ff3_2[md5=32c158f481b4fd7630c565030f7bc482]
+   - conda-forge/linux-64::conda==24.11.3=py312h7900ff3_0[md5=bdaca5d82db98d8b5639f058a818ff03]
+   - conda-forge/noarch::conda-libmamba-solver==24.9.0=pyhd8ed1ab_0[md5=45378d089c5f72c9c0d63d58414c645d]
+   - conda-forge/linux-64::mamba==1.5.12=py312h9460a1c_0[md5=59a9360536caad98732fdfdc320e41dc]
+
+
+  Package                         Version  Build               Channel         Size
+─────────────────────────────────────────────────────────────────────────────────────
+  Install:
+─────────────────────────────────────────────────────────────────────────────────────
+
+  [32m+ _libgcc_mutex          [0m           0.1  conda_forge         conda-forge         
+  [32m+ ca-certificates        [0m    2024.12.14  hbcca054_0          conda-forge         
+  [32m+ ld_impl_linux-64       [0m          2.43  h712a8e2_2          conda-forge         
+  [32m+ pybind11-abi           [0m             4  hd8ed1ab_3          conda-forge         
+  [32m+ python_abi             [0m          3.12  5_cp312             conda-forge         
+  [32m+ tzdata                 [0m         2025a  h78e105d_0          conda-forge         
+  [32m+ libgomp                [0m        14.2.0  h77fa898_1          conda-forge         
+  [32m+ _openmp_mutex          [0m           4.5  2_gnu               conda-forge         
+  [32m+ libgcc                 [0m        14.2.0  h77fa898_1          conda-forge         
+  [32m+ c-ares                 [0m        1.34.4  hb9d3cd8_0          conda-forge         
+  [32m+ libexpat               [0m         2.6.4  h5888daf_0          conda-forge         
+  [32m+ libgcc-ng              [0m        14.2.0  h69a702a_1          conda-forge         
+  [32m+ liblzma                [0m         5.6.3  hb9d3cd8_1          conda-forge         
+  [32m+ libstdcxx              [0m        14.2.0  hc0a3c3a_1          conda-forge         
+  [32m+ libzlib                [0m         1.3.1  hb9d3cd8_2          conda-forge         
+  [32m+ ncurses                [0m           6.5  h2d0b736_2          conda-forge         
+  [32m+ openssl                [0m         3.4.0  h7b32b05_1          conda-forge         
+  [32m+ reproc                 [0m  14.2.5.post0  hb9d3cd8_0          conda-forge         
+  [32m+ bzip2                  [0m         1.0.8  h4bc722e_7          conda-forge         
+  [32m+ keyutils               [0m         1.6.1  h166bdaf_0          conda-forge         
+  [32m+ libedit                [0m  3.1.20240808  pl5321h7949ede_0    conda-forge         
+  [32m+ libev                  [0m          4.33  hd590300_2          conda-forge         
+  [32m+ libffi                 [0m         3.4.2  h7f98852_5          conda-forge         
+  [32m+ libiconv               [0m          1.17  hd590300_2          conda-forge         
+  [32m+ libnsl                 [0m         2.0.1  hd590300_0          conda-forge         
+  [32m+ libsqlite              [0m        3.48.0  hee588c1_0          conda-forge         
+  [32m+ libssh2                [0m        1.11.1  hf672d98_0          conda-forge         
+  [32m+ libstdcxx-ng           [0m        14.2.0  h4852527_1          conda-forge         
+  [32m+ libuuid                [0m        2.38.1  h0b41bf4_0          conda-forge         
+  [32m+ libxcrypt              [0m        4.4.36  hd590300_1          conda-forge         
+  [32m+ lz4-c                  [0m        1.10.0  h5888daf_1          conda-forge         
+  [32m+ lzo                    [0m          2.10  hd590300_1001       conda-forge         
+  [32m+ readline               [0m           8.2  h8228510_1          conda-forge         
+  [32m+ reproc-cpp             [0m  14.2.5.post0  h5888daf_0          conda-forge         
+  [32m+ tk                     [0m        8.6.13  noxft_h4845f30_101  conda-forge         
+  [32m+ fmt                    [0m        11.0.2  h434a139_0          conda-forge         
+  [32m+ krb5                   [0m        1.21.3  h659f571_0          conda-forge         
+  [32m+ libnghttp2             [0m        1.64.0  h161d5f1_0          conda-forge         
+  [32m+ libsolv                [0m        0.7.30  h3509ff9_0          conda-forge         
+  [32m+ libxml2                [0m        2.13.5  h0d44e9d_1          conda-forge         
+  [32m+ python                 [0m        3.12.8  h9e4cc4f_1_cpython  conda-forge         
+  [32m+ yaml-cpp               [0m         0.8.0  h59595ed_0          conda-forge         
+  [32m+ zstd                   [0m         1.5.6  ha6fb4c9_0          conda-forge         
+  [32m+ libarchive             [0m         3.7.7  h4585015_3          conda-forge         
+  [32m+ libcurl                [0m        8.11.1  h332b0f4_0          conda-forge         
+  [32m+ menuinst               [0m         2.2.0  py312h7900ff3_0     conda-forge         
+  [32m+ archspec               [0m         0.2.5  pyhd8ed1ab_0        conda-forge         
+  [32m+ boltons                [0m        24.0.0  pyhd8ed1ab_1        conda-forge         
+  [32m+ brotli-python          [0m         1.1.0  py312h2ec8cdc_2     conda-forge         
+  [32m+ certifi                [0m    2024.12.14  pyhd8ed1ab_0        conda-forge         
+  [32m+ charset-normalizer     [0m         3.4.1  pyhd8ed1ab_0        conda-forge         
+  [32m+ colorama               [0m         0.4.6  pyhd8ed1ab_1        conda-forge         
+  [32m+ distro                 [0m         1.9.0  pyhd8ed1ab_1        conda-forge         
+  [32m+ frozendict             [0m         2.4.6  py312h66e93f0_0     conda-forge         
+  [32m+ hpack                  [0m         4.0.0  pyhd8ed1ab_1        conda-forge         
+  [32m+ hyperframe             [0m         6.0.1  pyhd8ed1ab_1        conda-forge         
+  [32m+ idna                   [0m          3.10  pyhd8ed1ab_1        conda-forge         
+  [32m+ jsonpointer            [0m         3.0.0  py312h7900ff3_1     conda-forge         
+  [32m+ libmamba               [0m        1.5.12  h49b8a8d_0          conda-forge         
+  [32m+ packaging              [0m          24.2  pyhd8ed1ab_2        conda-forge         
+  [32m+ platformdirs           [0m         4.3.6  pyhd8ed1ab_1        conda-forge         
+  [32m+ pluggy                 [0m         1.5.0  pyhd8ed1ab_1        conda-forge         
+  [32m+ pycosat                [0m         0.6.6  py312h66e93f0_2     conda-forge         
+  [32m+ pycparser              [0m          2.22  pyh29332c3_1        conda-forge         
+  [32m+ pysocks                [0m         1.7.1  pyha55dd90_7        conda-forge         
+  [32m+ ruamel.yaml.clib       [0m         0.2.8  py312h66e93f0_1     conda-forge         
+  [32m+ setuptools             [0m        75.8.0  pyhff2d567_0        conda-forge         
+  [32m+ truststore             [0m        0.10.0  pyhd8ed1ab_0        conda-forge         
+  [32m+ wheel                  [0m        0.45.1  pyhd8ed1ab_1        conda-forge         
+  [32m+ cffi                   [0m        1.17.1  py312h06ac9bb_0     conda-forge         
+  [32m+ h2                     [0m         4.1.0  pyhd8ed1ab_1        conda-forge         
+  [32m+ jsonpatch              [0m          1.33  pyhd8ed1ab_1        conda-forge         
+  [32m+ libmambapy             [0m        1.5.12  py312hbaee817_0     conda-forge         
+  [32m+ pip                    [0m        24.3.1  pyh8b19718_2        conda-forge         
+  [32m+ ruamel.yaml            [0m       0.18.10  py312h66e93f0_0     conda-forge         
+  [32m+ tqdm                   [0m        4.67.1  pyhd8ed1ab_1        conda-forge         
+  [32m+ zstandard              [0m        0.23.0  py312hef9b889_1     conda-forge         
+  [32m+ conda-package-streaming[0m        0.11.0  pyhd8ed1ab_0        conda-forge         
+  [32m+ urllib3                [0m         2.3.0  pyhd8ed1ab_0        conda-forge         
+  [32m+ requests               [0m        2.32.3  pyhd8ed1ab_1        conda-forge         
+  [32m+ conda-package-handling [0m         2.4.0  pyh7900ff3_2        conda-forge         
+  [32m+ conda                  [0m       24.11.3  py312h7900ff3_0     conda-forge         
+  [32m+ conda-libmamba-solver  [0m        24.9.0  pyhd8ed1ab_0        conda-forge         
+  [32m+ mamba                  [0m        1.5.12  py312h9460a1c_0     conda-forge         
+
+  Summary:
+
+  Install: 84 packages
+
+  Total download: 0 B
+
+─────────────────────────────────────────────────────────────────────────────────────
+
+
+
+Transaction starting
+[?25l[2K[0G[?25h
+Transaction finished
+
+To activate this environment, use:
+
+    micromamba activate /home/lahir/miniforge3
+
+Or to execute a single command in this environment, use:
+
+    micromamba run -p /home/lahir/miniforge3 mycommand
+
+installation finished.
+Do you wish to update your shell profile to automatically initialize conda?
+This will activate conda on startup and change the command prompt when activated.
+If you'd prefer that conda's base environment not be activated on startup,
+   run the following command when conda is activated:
+
+conda config --set auto_activate_base false
+
+You can undo this by running `conda init --reverse $SHELL`? [yes|no]
+[no] >>> yes
+no change     /home/lahir/miniforge3/condabin/conda
+no change     /home/lahir/miniforge3/bin/conda
+no change     /home/lahir/miniforge3/bin/conda-env
+no change     /home/lahir/miniforge3/bin/activate
+no change     /home/lahir/miniforge3/bin/deactivate
+no change     /home/lahir/miniforge3/etc/profile.d/conda.sh
+no change     /home/lahir/miniforge3/etc/fish/conf.d/conda.fish
+no change     /home/lahir/miniforge3/shell/condabin/Conda.psm1
+no change     /home/lahir/miniforge3/shell/condabin/conda-hook.ps1
+no change     /home/lahir/miniforge3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /home/lahir/miniforge3/etc/profile.d/conda.csh
+modified      /home/lahir/.bashrc
+
+==> For changes to take effect, close and re-open your current shell. <==
+
+./Miniforge3-Linux-x86_64.sh: 517: [: Illegal number: 1
+24
+usage: mamba [-h] [-v] [--no-plugins] [-V] COMMAND ...
+mamba: error: argument COMMAND: invalid choice: 'shell' (choose from activate, clean, commands, compare, config, create, deactivate, env, export, info, init, install, list, notices, package, doctor, repoquery, remove, uninstall, rename, run, search, update, upgrade)
+[?2004h]0;lahir@TIGER06363: ~[01;32mlahir@TIGER06363[00m:[01;34m~[00m$ [7mecho 'export PATH="$HOME/miniforge3/bin:$PATH"' >> ~/.bashrc[27m
+[7msource ~/.bashrc[27m[A]0;lahir@TIGER06363: ~[01;32mlahir@TIGER06363[00m:[01;34m~[00m$ echo 'export PATH="$HOME/miniforge3/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+[?2004l[?2004h(base) ]0;lahir@TIGER06363: ~[01;32mlahir@TIGER06363[00m:[01;34m~[00m$ conda --version
+[?2004lconda 24.11.3
+[?2004h(base) ]0;lahir@TIGER06363: ~[01;32mlahir@TIGER06363[00m:[01;34m~[00m$ conda create  [K-n lahir_env
+[?2004lChannels:
+ - conda-forge
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ done
+Solving environment: / done
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 24.11.3
+    latest version: 25.1.1
+
+Please update conda by running
+
+    $ conda update -n base -c conda-forge conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/lahir/miniforge3/envs/lahir_env
+
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: - done
+Verifying transaction: | / done
+Executing transaction: \ done
+#
+# To activate this environment, use
+#
+#     $ conda activate lahir_env
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+[?2004h(base) ]0;lahir@TIGER06363: ~[01;32mlahir@TIGER06363[00m:[01;34m~[00m$ conda activate lahir_env
+[?2004l[?2004h(lahir_env) ]0;lahir@TIGER06363: ~[01;32mlahir@TIGER06363[00m:[01;34m~[00m$ de[K[Kcond [Ka det[Kactivate
+[?2004l[?2004h(base) ]0;lahir@TIGER06363: ~[01;32mlahir@TIGER06363[00m:[01;34m~[00m$ cond env list
+[?2004lcond: command not found
+[?2004h(base) ]0;lahir@TIGER06363: ~[01;32mlahir@TIGER06363[00m:[01;34m~[00m$ conda env list
+[?2004l
+# conda environments:
+#
+base                 * /home/lahir/miniforge3
+lahir_env              /home/lahir/miniforge3/envs/lahir_env
+
+[?2004h(base) ]0;lahir@TIGER06363: ~[01;32mlahir@TIGER06363[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2025-02-25 10:20:45+05:30 [COMMAND_EXIT_CODE="0"]

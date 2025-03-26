@@ -1,0 +1,94 @@
+name: Test Module Imports
+
+on:
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install tree CLI
+        run: sudo apt-get update && sudo apt-get install -y tree
+
+      - name: Show directory structure before build
+        run: tree
+
+      - name: Setup Miniforge (Mambaforge)
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          installer-url: https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+          miniforge-variant: Mambaforge
+          use-mamba: true
+          auto-update-conda: true
+          environment-file: env.yml
+          activate-environment: mle-dev  # Automatically activates environment
+
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install --upgrade build setuptools
+
+      - name: Build the package
+        run: python -m build
+
+      - name: Show directory structure after build
+        run: tree
+
+      - name: Verify that the build artifacts exist
+        run: ls -l dist/  # Ensures that the package was actually built
+
+      - name: Upload built artifacts
+        if: success()  # Upload only if the build was successful
+        uses: actions/upload-artifact@v4
+        with:
+          name: my_package
+          path: |
+            dist/*
+            env.yml
+            tests/
+
+  deploy:
+    needs: build  # This ensures the build job completes successfully before starting the deploy job
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}  # Ensures all steps use a login shell
+
+    steps:
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Download built artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: my_package
+          path: .
+
+      - name: List downloaded artifacts
+        run: ls -l dist/  # Ensure .whl exists
+
+      - name: Fix nested dist/ issue (if needed)
+        run: mv dist/dist/* dist/ || true  # Moves files if nested
+
+      - name: Move env.yml to root
+        run: mv dist/env.yml ./ || true  # Ignore error if it doesn't exist
+
+      - name: Install the package
+        run: pip install dist/*.whl
+
+      - name: Run the script from installed package
+        run: python -m  my_package.evaluation
+
+      - name: Run tests for module imports
+        run: pytest -v tests/import_tests/
