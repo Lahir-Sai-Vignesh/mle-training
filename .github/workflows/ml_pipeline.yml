@@ -1,0 +1,128 @@
+name: ML Pipeline CI/CD
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  unit_test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Miniforge (Mambaforge)
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          installer-url: https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+          miniforge-variant: Mambaforge
+          use-mamba: true
+          auto-update-conda: true
+          environment-file: env.yml
+          activate-environment: mle-dev  # Automatically activates environment
+
+      - name: Display directory tree
+        run: tree
+
+      - name: Install package in development mode
+        run: pip install -e .
+
+      - name: Run unit tests
+        run: pytest -v tests/
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install tree CLI
+        run: sudo apt-get update && sudo apt-get install -y tree
+
+      - name: Show directory structure before build
+        run: tree
+
+      - name: Setup Miniforge (Mambaforge)
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          installer-url: https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+          miniforge-variant: Mambaforge
+          use-mamba: true
+          auto-update-conda: true
+          environment-file: env.yml
+          activate-environment: mle-dev  # Automatically activates environment
+
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install --upgrade build setuptools
+
+      - name: Build the package
+        run: python -m build
+
+      - name: Show directory structure after build
+        run: tree
+
+      - name: Install the built package
+        run: pip install dist/*.whl
+
+      - name: Run installation tests
+        run: pytest -v tests/test_installation.py
+
+
+      - name: Upload built artifacts
+        if: success()  # Upload only if the build was successful
+        uses: actions/upload-artifact@v4
+        with:
+          name: my_package
+          path: |
+            dist/*
+            env.yml
+            scripts/
+
+  deploy:
+    needs: build  # This ensures the build job completes successfully before starting the deploy job
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'  # Make sure this is compatible with your code
+
+      - name: Download built artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: my_package
+          path: .  # Extract to root directory
+
+
+
+      - name: Install the built package
+        run: pip install dist/*.whl
+
+      - name: Run workflow scripts in help mode
+        run: |
+          python scripts/ingest_data.py -h
+          python scripts/train.py -h
+          python scripts/score.py -h
+
+      - name: Run workflow scripts in execution mode
+        run: |
+          python scripts/ingest_data.py "https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz" --output processed_data/
+          python scripts/train.py --input processed_data/ --output models/
+          python scripts/score.py --input processed_data/ --models models/ --output results/
+
