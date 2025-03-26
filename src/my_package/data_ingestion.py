@@ -1,15 +1,21 @@
 import os
 import tarfile
 
-import numpy as np
 import pandas as pd
 from six.moves import urllib
 from sklearn.impute import SimpleImputer
 from sklearn.model_selection import StratifiedShuffleSplit
 
-DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
-HOUSING_PATH = os.path.join("datasets", "housing")
-HOUSING_URL = DOWNLOAD_ROOT + "datasets/housing/housing.tgz"
+# Import constants from config.py
+from my_package.config import (
+    HOUSING_PATH,
+    HOUSING_URL,
+    IMPUTATION_STRATEGY,
+    INCOME_BINS,
+    INCOME_LABELS,
+    RANDOM_STATE,
+    TEST_SIZE,
+)
 
 
 def fetch_housing_data(housing_url=HOUSING_URL, housing_path=HOUSING_PATH):
@@ -31,12 +37,12 @@ def preprocess_data():
     housing = load_housing_data()
 
     housing["income_cat"] = pd.cut(
-        housing["median_income"],
-        bins=[0.0, 1.5, 3.0, 4.5, 6.0, np.inf],
-        labels=[1, 2, 3, 4, 5],
+        housing["median_income"], bins=INCOME_BINS, labels=INCOME_LABELS
     )
 
-    split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
+    split = StratifiedShuffleSplit(
+        n_splits=1, test_size=TEST_SIZE, random_state=RANDOM_STATE
+    )
     for train_index, test_index in split.split(housing, housing["income_cat"]):
         strat_train_set = housing.loc[train_index]
         strat_test_set = housing.loc[test_index]
@@ -51,7 +57,7 @@ def prepare_features(housing):
     housing_num = housing.drop(
         ["ocean_proximity", "median_house_value"], axis=1, errors="ignore"
     )
-    imputer = SimpleImputer(strategy="median")
+    imputer = SimpleImputer(strategy=IMPUTATION_STRATEGY)
     X = imputer.fit_transform(housing_num)
 
     housing_tr = pd.DataFrame(X, columns=housing_num.columns, index=housing.index)
